@@ -2,85 +2,73 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julieta Noelí Figueroa</title>
-    <link rel="stylesheet" href="estilos.css" />
-    <link rel="icon" href="img/favicon.ico" type="favicon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
     </style>
 </head>
 
 <body>
+
     <header class="header">
-        <a href="index.html" class="logo"><img src="img/kawa.png" /></a>
-        <nav class="nav">
-            <a href="galeria.html">Mis trabajos</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <div class="hero">
-            <img src="img/banner.jpg" alt="Banner con letras" />
+        <div class="barra-superior">
+            <a href="index.html" class="logo-texto">KAWA</a>
+            <nav class="nav">
+                <a href="galeria.html">Mis trabajos</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="banner">
+            <img src="img/icon.png" class="logo-banner">
+            <div class="texto-banner">
+                <p>¡Holi! Soy Julieta, estudio Diseño y Comunicación Visual en la UNLa.</p>
+                <p>Tengo 28 años y me mantengo siempre en modo creativo. Me encanta el diseño y fusionar estilos como el manga, el anime y el pop art en mis proyectos, pero me adapto bien a cualquier estilo que se necesite. Además, soy mamá de Kobu y Uma.</p>
+            </div>
         </div>
     </header>
 
-    <main class="contenido-principal">
-        <section class="bio">
-            <img src="img/icon.png" alt="Foto de perfil" class="foto-perfil" />
-            <p>
-                ¡Hola! Soy estudiante de Diseño y Comunicación Visual en la Universidad de Lanús. Tengo 28 años y me
-                mantengo
-                siempre en modo creativo.
-            </p>
-            <p>
-                Me encanta el arte, los proyectos, el diseño, el manga, el anime y el pop art en mis ilustraciones.
-            </p>
-            <p>
-                ¡Lo más importante, soy mamá de Kobu y Uma!
-            </p>
+    <main class="contenido">
+
+        <section class="info-box">
+            <h3>Datos personales</h3>
+            <p><strong>Habilidades:</strong> ilustración, diseño gráfico</p>
+            <p><strong>Idiomas:</strong> español, japonés básico</p>
+            <p><strong>Intereses:</strong> manga, cultura japonesa, anime y diseño experimental</p>
+            <p><strong>Disponibilidad:</strong> media jornada</p>
+            <img src="img/meme.gif" alt="Meme simpático">
         </section>
 
-        <section class="info">
-            <div class="datos-personales">
-                <h2>Datos personales</h2>
-                <ul>
-                    <li><span class="etiqueta">Habilidades:</span> ilustración, diseño gráfico y sobrevivir a un séptimo
-                        regimiento</li>
-                    <li><span class="etiqueta">Idiomas:</span> español, japonés básico</li>
-                    <li><span class="etiqueta">Intereses:</span> manga, cultura japonesa, anime y diseño experimental
-                    </li>
-                    <li><span class="etiqueta">Disponibilidad:</span> media jornada</li>
-                </ul>
-                <img src="img/meme.gif" alt="Ilustración divertida de los simpsons" />
-            </div>
-            <div class="trabajos">
-                <h2>Mis trabajos</h2>
-                <art class="galeria">
-                    <img src="img/galeria-1.jpg" alt="abecedario experimental para la materia letra experimental" />
-                    <img src="img/galeria-2.jpg"
-                        alt="segundo abecedario experimental para la materia letra experimental" />
-                    <img src="img/galeria-3.jpg" alt="postales para la materia taller de expresión visual" />
-                    <img src="img/galeria-4.jpg" alt="afiche realizado para la materia taller de expresion visual" />
-                    <img src="img/galeria-5.jpg" alt="desplegable realizado para espacio tipografico 3" />
-                    <img src="img/galeria-6.jpg" alt="afiche para la marcha lgbt antiracista y antifacista" />
-                </art>
+        <section class="trabajos">
+            <h2>MIS TRABAJOS</h2>
+            <div class="galeria">
+                <img src="img/galeria-1.jpg" alt="">
+                <img src="img/galeria-2.jpg" alt="">
+                <img src="img/galeria-3.jpg" alt="">
+                <img src="img/galeria-4.jpg" alt="">
+                <img src="img/galeria-5.jpg" alt="">
+                <img src="img/galeria-6.jpg" alt="">
             </div>
         </section>
+
     </main>
 
-    <aside>
-        <img src="img/vector.svg" alt="caricatura vectorial de mi misma" />
-        <p>mi mayor habilidad es haber sobrevivido a un septimo regimiento de dudosa prosedencia</p>
+    <aside class="aside">
+        <img src="img/vector.svg" class="vector" alt="">
+        <p class="txt-aside">Mi mayor habilidad fue sobrevivir a un séptimo regimiento de dudosa prosedencia.</p>
     </aside>
 
     <footer class="footer">
-        <audio id="player" controls>
-            <source src="tu-audio.mp3" type="audio/mpeg">
-            Tu navegador no soporta el audio.
-        </audio>
-
+        <button class="btn-play">▶ Poné play!</button>
         <p>Julieta Noelí Figueroa | UNLa | 2025</p>
     </footer>
+
 </body>
 
 </html>
