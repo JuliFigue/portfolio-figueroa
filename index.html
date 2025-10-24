@@ -11,10 +11,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
     </style>
 </head>
 
 <body>
+
+    <audio id="musicaFondo" src="musica/audio-fondo.mp3" preload="auto"></audio>
 
     <header class="header">
         <div class="barra-superior">
@@ -38,10 +41,11 @@
 
         <section class="info-box">
             <h3>Datos personales</h3>
-            <p><strong>Habilidades:</strong> ilustración, diseño gráfico</p>
-            <p><strong>Idiomas:</strong> español, japonés básico</p>
+            <p><strong>Habilidades:</strong> ilustración, diseño gráfico, fotografía, xilografía y monocopia</p>
+            <p><strong>Idiomas:</strong> español nativo, ingles y japonés básico</p>
             <p><strong>Intereses:</strong> manga, cultura japonesa, anime y diseño experimental</p>
             <p><strong>Disponibilidad:</strong> media jornada</p>
+            <h4>"Vivamos abrazando el error"</h4>
             <img src="img/meme.gif" alt="Meme simpático">
         </section>
 
@@ -65,9 +69,11 @@
     </aside>
 
     <footer class="footer">
-        <button class="btn-play">▶ Poné play!</button>
+        <button class="btn-play" id="btnMusica">▶ Poné play!</button>
         <p>Julieta Noelí Figueroa | UNLa | 2025</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
