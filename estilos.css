@@ -3,13 +3,10 @@
 
 :root {
     --color-fondo: #4A0048;
-    --color-footer: #FBEED7;
     --color-nav: #C7004C;
     --color-verde: #39FF14;
     --color-texto: #FBEED7;
-    /* Agregamos un color para el texto dentro del botón */
     --color-btn-texto: #4A0048;
-    /* Usamos el color de fondo principal */
 }
 
 * {
@@ -200,53 +197,173 @@ body {
 .footer p {
     font-family: 'inter';
     font-size: 20px;
-    /* Corregido: estaba '20 px' */
     color: var(--color-texto);
     display: flex;
     align-items: center;
 }
 
-/* ESTILOS DEL BOTÓN DE MÚSICA */
+/* BOTÓN DE MÚSICA */
 .btn-play {
-    /* Estilos base (como en tu imagen) */
     background-color: var(--color-verde);
-    /* Ajuste el padding y border-radius para la forma ovalada */
     padding: 15px 35px;
     border: none;
     border-radius: 50px;
-    /* Bordes más redondeados */
     font-weight: 900;
-    /* Más audaz */
-    font-size: 20px;
-    /* Más grande */
+    font-size: 2;
     cursor: pointer;
     color: var(--color-btn-texto);
-    /* Color del texto/icono */
     margin: 0 40px;
-    /* Espaciado con respecto al borde del footer */
-
-    /* Efectos para mejorar la sensación de "botón" */
     transition: transform 0.1s, background-color 0.1s;
     box-shadow: 0 4px 0 var(--color-fondo);
-    /* Sombra para efecto 3D simple */
 }
 
 .btn-play:hover {
     background-color: #31e512;
-    /* Un poco más oscuro al pasar el mouse */
 }
 
-/* Efecto al hacer click */
 .btn-play:active {
     transform: translateY(4px);
-    /* Mueve el botón hacia abajo */
     box-shadow: 0 0 0 var(--color-fondo);
-    /* Oculta la sombra para simular que está presionado */
 }
 
-/* Estado visual para cuando está sonando (agregado por JavaScript) */
 .btn-play.is-playing {
     background-color: #ffaa00;
-    /* Un color distinto (naranja) cuando está activo */
     color: var(--color-fondo);
+}
+
+/*CONTACTO*/
+
+.contacto {
+    background-color: var(--color-fondo); /
+    padding: 60px 80px;
+    min-height: 80vh; 
+}
+
+.contacto h2 {
+    font-family: 'inter', sans-serif;
+    font-size: 40px;
+    color: var(--color-texto); 
+    margin-bottom: 40px;
+}
+
+.contacto h2 em {
+    color: var(--color-verde); 
+    font-style: normal;
+}
+
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* FORMULARIO */
+.formulario-estilizado {
+    display: flex;
+    flex-direction: column;
+    
+    width: 600px; 
+    max-width: 65%; 
+    gap: 15px;
+    
+    margin-right: 50px; 
+}
+
+.formulario-estilizado input[type="email"],
+.formulario-estilizado input[type="text"],
+.formulario-estilizado textarea {
+    background-color: var(--color-footer); 
+    border: 3px solid var(--color-nav); 
+    padding: 15px 20px;
+    font-size: 18px;
+    color: var(--color-fondo);
+    border-radius: 10px;
+    outline: none; 
+    resize: none; 
+}
+
+.formulario-estilizado input[type="email"],
+.formulario-estilizado input[type="text"] {
+    width: 100%; 
+}
+
+.formulario-estilizado textarea {
+    height: 150px;
+}
+
+.formulario-estilizado input[type="submit"] {
+    background-color: var(--color-nav); 
+    color: var(--color-texto); 
+    border: none;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 150px;
+    align-self: flex-start;
+    transition: background-color 0.2s;
+}
+
+.formulario-estilizado input[type="submit"]:hover {
+    background-color: #a3003c;
+}
+
+.info-lateral {
+    position: relative;
+    width: 380px; 
+    height: 480px; 
+}
+
+
+.img-contacto-animado {
+    position: absolute; 
+    top: 50px; 
+    right: -20px; 
+    width: 250px; 
+    z-index: 2; 
+    transform: rotate(-5deg); 
+}
+
+
+.img-kawa-circulo {
+    position: absolute;
+    top: 130px; 
+    right: 1px; 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    border-color: var(--color-verde); 
+    border: 5px solid var(--color-verde);
+    z-index: 3; 
+    transform: rotate(5deg); 
+    object-fit: cover; 
+}
+
+
+.info-contacto-box {
+    position: absolute; 
+    top: 250px; 
+    left: 20px; 
+    background-color: var(--color-footer);
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid var(--color-verde);
+    box-shadow: 5px 5px 0 var(--color-nav);
+    color: var(--color-fondo);
+    width: 320px; 
+    z-index: 3; 
+    line-height: 1.5; 
+}
+
+.info-contacto-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.info-contacto-box p strong {
+    color: var(--color-nav); 
 }

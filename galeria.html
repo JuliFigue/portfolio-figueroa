@@ -11,9 +11,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
     </style>
 </head>
+
 <body>
+
+    <audio id="musicaFondo" src="musica/audio-fondo.mp3" preload="auto"></audio>
+
     <header class="header">
         <div class="barra-superior">
             <a href="index.html" class="logo-texto">KAWA</a>
@@ -23,8 +28,14 @@
             </nav>
         </div>
     </header>
-     <footer class="footer">
-        <button class="btn-play">▶ Poné play!</button>
+   
+    <footer class="footer">
+        <button class="btn-play" id="btnMusica">▶ Poné play!</button>
         <p>Julieta Noelí Figueroa | UNLa | 2025</p>
-    </footer>    
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
+</html>

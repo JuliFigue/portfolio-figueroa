@@ -11,20 +11,61 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
     </style>
 </head>
+
 <body>
+
+    <audio id="musicaFondo" src="musica/audio-fondo.mp3" preload="auto"></audio>
+
     <header class="header">
         <div class="barra-superior">
             <a href="index.html" class="logo-texto">KAWA</a>
             <nav class="nav">
                 <a href="galeria.html">Mis trabajos</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="contacto.html" class="activo">Contacto</a> 
             </nav>
         </div>
     </header>
-     <footer class="footer">
-        <button class="btn-play">▶ Poné play!</button>
+
+    <main class="contacto">
+        
+        <h2>¿Querés trabajar conmigo? <em>¡Contactame!</em></h2>
+        
+        <section class="contenedor-contacto">
+            
+            <form action="" method="post" class="formulario-estilizado">
+                <input type="email" name="email" placeholder="tu email debería estar acá">
+                <input type="text" name="asunto" placeholder="insertar asunto">
+                <textarea name="mensaje" placeholder="texto texto texto"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+
+            <div class= "info-lateral">
+                <img src="img/ratita 4.svg" alt="Personaje animado" class="img-contacto">
+                
+                <img src="img/icon.png" alt="Logo Kawa" class="img-kawa-circulo">
+
+                <div class="info-contacto-box">
+                    <p><strong>Be:</strong> Julieta Noelí Figueroa</p>
+                    <p><strong>IG:</strong> @kwa.dg</p>
+                    <p>julietafigueroa.design@gmail.com</p>
+                    <p>+1111111111</p>
+                </div>
+            </div>
+            </div>
+
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <button class="btn-play" id="btnMusica">▶ Poné play!</button>
         <p>Julieta Noelí Figueroa | UNLa | 2025</p>
-    </footer>    
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
+
+</html>
