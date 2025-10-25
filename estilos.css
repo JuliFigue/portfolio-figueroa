@@ -3,10 +3,11 @@
 
 :root {
     --color-fondo: #4A0048;
+    --color-footer: #FBEED7;
     --color-nav: #C7004C;
     --color-verde: #39FF14;
     --color-texto: #FBEED7;
-    --color-btn-texto: #4A0048;
+    --color-btn-texto: #4A0048
 }
 
 * {
@@ -234,27 +235,27 @@ body {
 /*CONTACTO*/
 
 .contacto {
-    background-color: var(--color-fondo); /
+    background-color: var(--color-fondo);
     padding: 60px 80px;
-    min-height: 80vh; 
+    min-height: 80vh;
 }
 
 .contacto h2 {
     font-family: 'inter', sans-serif;
     font-size: 40px;
-    color: var(--color-texto); 
+    color: var(--color-texto);
     margin-bottom: 40px;
 }
 
 .contacto h2 em {
-    color: var(--color-verde); 
+    color: var(--color-verde);
     font-style: normal;
 }
 
 
 .contenedor-contacto {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     max-width: 1200px;
@@ -265,30 +266,30 @@ body {
 .formulario-estilizado {
     display: flex;
     flex-direction: column;
-    
-    width: 600px; 
-    max-width: 65%; 
+
+    width: 600px;
+    max-width: 65%;
     gap: 15px;
-    
-    margin-right: 50px; 
+
+    margin-right: 50px;
 }
 
 .formulario-estilizado input[type="email"],
 .formulario-estilizado input[type="text"],
 .formulario-estilizado textarea {
-    background-color: var(--color-footer); 
-    border: 3px solid var(--color-nav); 
+    background-color: var(--color-footer);
+    border: 3px solid var(--color-nav);
     padding: 15px 20px;
     font-size: 18px;
     color: var(--color-fondo);
     border-radius: 10px;
-    outline: none; 
-    resize: none; 
+    outline: none;
+    resize: none;
 }
 
 .formulario-estilizado input[type="email"],
 .formulario-estilizado input[type="text"] {
-    width: 100%; 
+    width: 100%;
 }
 
 .formulario-estilizado textarea {
@@ -296,8 +297,8 @@ body {
 }
 
 .formulario-estilizado input[type="submit"] {
-    background-color: var(--color-nav); 
-    color: var(--color-texto); 
+    background-color: var(--color-nav);
+    color: var(--color-texto);
     border: none;
     padding: 12px 30px;
     font-size: 20px;
@@ -315,55 +316,56 @@ body {
 
 .info-lateral {
     position: relative;
-    width: 380px; 
-    height: 480px; 
+    width: 380px;
+    height: 480px;
 }
 
 
 .img-contacto-animado {
-    position: absolute; 
-    top: 50px; 
-    right: -20px; 
-    width: 250px; 
-    z-index: 2; 
-    transform: rotate(-5deg); 
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    width: 250px;
+    z-index: 2;
+    transform: rotate(-5deg);
 }
 
 
 .img-kawa-circulo {
     position: absolute;
-    top: 130px; 
-    right: 1px; 
-    width: 120px; 
-    height: 120px; 
+    top: 130px;
+    right: 1px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    border-color: var(--color-verde); 
+    border-color: var(--color-verde);
     border: 5px solid var(--color-verde);
-    z-index: 3; 
-    transform: rotate(5deg); 
-    object-fit: cover; 
+    z-index: 3;
+    transform: rotate(5deg);
+    object-fit: cover;
 }
 
 
 .info-contacto-box {
-    position: absolute; 
-    top: 250px; 
-    left: 20px; 
+    position: absolute;
+    top: 250px;
+    left: 20px;
     background-color: var(--color-footer);
     padding: 20px;
     border-radius: 10px;
     border: 5px solid var(--color-verde);
     box-shadow: 5px 5px 0 var(--color-nav);
     color: var(--color-fondo);
-    width: 320px; 
-    z-index: 3; 
-    line-height: 1.5; 
+    width: 320px;
+    z-index: 3;
+    line-height: 1.5;
 }
 
 .info-contacto-box p {
     font-size: 16px;
     line-height: 1.6;
 }
+
 .info-contacto-box p strong {
-    color: var(--color-nav); 
+    color: var(--color-nav);
 }
