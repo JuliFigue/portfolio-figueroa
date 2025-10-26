@@ -579,4 +579,160 @@ body {
     transform: scale(1.05);
 }
 
+/*MEDIA*/
+
+@media (max-width: 768px) {
+    .barra-superior {
+        padding: 10px 20px; 
+    }
+
+    .nav {
+        
+        display: none;
+    }
+
+   
+    .banner {
+        height: 300px; 
+    }
+
+    .logo-banner {
+        width: 150px;
+        height: 150px;
+        top: 20px; 
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .texto-banner {
+        width: 90%; 
+        left: 50%; 
+        transform: translateX(-50%);
+        top: 170px; 
+        font-size: 14px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .contenido {
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .trabajos {
+        width: 90%; 
+        margin-bottom: 30px; 
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+
+    .galeria img {
+        width: 100%;
+        height: auto; 
+        max-width: 250px; 
+        justify-self: center; 
+    }
+
+    .info-box {
+        width: 90%; 
+        max-width: none;
+        margin-top: 30px;
+    }
+
+    .aside {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .txt-aside {
+        width: 90%; 
+        margin: 20px 0; 
+        text-align: center;
+    }
+
+    .vector {
+        width: 180px; 
+        order: -1; 
+    }
+
+   
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .btn-play {
+        order: -1; 
+        margin: 10px 0 15px 0;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo-texto {
+        font-size: 30px;
+    }
+
+   
+    .banner {
+        height: 250px;
+    }
+
+    .logo-banner {
+        width: 100px;
+        height: 100px;
+        top: 10px;
+    }
+
+    .texto-banner {
+        top: 120px;
+        font-size: 13px;
+    }
+
+  
+    .trabajos h2 {
+        font-size: 40px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+
+    .galeria img {
+        width: 80%;
+        max-width: none;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .info-box h4 {
+        font-size: 28px;
+    }
+
+    .txt-aside {
+        font-size: 16px;
+        padding: 25px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .btn-play {
+        padding: 12px 25px;
+    }
+}
+
 
