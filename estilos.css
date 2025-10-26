@@ -91,7 +91,7 @@ body {
 }
 
 .info-box {
-    width: 260px;
+    max-width: 384px;
     background-color: var(--color-footer);
     color: var(--color-fondo);
     padding: 30px;
@@ -470,6 +470,113 @@ body {
     margin-top: 30px;
     position: relative;
     z-index: 1;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 15px var(--color-verde), 0 0 25px var(--color-verde);
+}
+
+/*GALERIA-FOTOS*/
+
+.fotos-main {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.fotos-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.fotos-titulo {
+    font-family: 'Jersey 25'; 
+    font-size: 90px;
+    font-weight: 900;
+    color: var(--color-texto);
+}
+
+.fotos-ratita {
+    width: 200px;
+}
+
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.fotos-grid img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 6px solid var(--color-nav);
+    box-shadow: 0 0 8px var(--color-verde);
+    transition: transform .2s ease-in-out;
+}
+
+.fotos-grid img:hover {
+    transform: scale(1.05);
+}
+
+/*GALERIA AFICHES*/
+
+.afiches-main {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.afiches-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.afiches-titulo {
+    font-family: 'Jersey 25';
+    font-size: 90px;
+    font-weight: 900;
+    color: var(--color-texto);
+}
+
+.afiches-ratita {
+    width: 200px;
+}
+
+.afiches-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+.afiches-grid img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 6px solid var(--color-nav);
+    box-shadow: 0 0 8px var(--color-verde);
+    transition: transform .2s ease-in-out;
+}
+
+.afiches-grid img:hover {
+    transform: scale(1.05);
 }
 
 
