@@ -414,6 +414,18 @@ body {
     color: var(--color-nav);
 }
 
+.mensaje-exito {
+    display: none; 
+    padding: 15px;
+    background-color: #e6ffe6; 
+    border: 1px solid #00cc00; 
+    color: #008000; 
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
 /*GALERIA*/
 .galeria-main {
     padding: 40px 5%;

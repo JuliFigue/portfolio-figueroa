@@ -54,10 +54,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-document.getElementById('contactoForm').addEventListener('submit', function(event) {
+const formulario = document.getElementById('contactoForm');
+const mensajeExito = document.getElementById('mensajeExito');
 
+
+formulario.addEventListener('submit', function(event) {
     event.preventDefault(); 
-    this.style.display = 'none'; 
-    document.getElementById('mensajeExito').style.display = 'block';
-    console.log("Simulación: Datos del formulario procesados.");
+    formulario.style.display = 'none';
+    mensajeExito.style.display = 'block';
+
+    console.log("Simulación de Envío Exitosa.");
+    console.log("Email:", formulario.querySelector('input[name="email"]').value);
+    console.log("Asunto:", formulario.querySelector('input[name="asunto"]').value);
 });
