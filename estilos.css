@@ -899,16 +899,6 @@ body {
         order: 2;
     }
 
-    .modal-content-wrapper {
-        width: 100%;
-    }
-
-    .modal-content {
-        max-height: 90vh;
-        border-width: 4px;
-        border-radius: 10px;
-    }
-}
 
 @media (max-width: 480px) {
 
