@@ -20,14 +20,20 @@
     <audio id="musicaFondo" src="musica/audio-fondo.mp3" preload="auto"></audio>
 
     <header class="header">
-        <div class="barra-superior">
-            <a href="index.html" class="logo-texto">KAWA</a>
-            <nav class="nav">
-                <a href="galeria.html">Mis trabajos</a>
-                <a href="contacto.html" class="activo">Contacto</a> 
-            </nav>
-        </div>
-    </header>
+    <div class="barra-superior">
+        <a href="index.html" class="logo-texto">KAWA</a>
+        <nav class="nav">
+            <a href="galeria.html">Mis trabajos</a>
+            <a href="contacto.html" class="activo">Contacto</a> 
+        </nav>
+        <button class="menu-hamburguesa" id="menu-toggle">☰</button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+        <a href="index.html">Inicio</a>
+        <a href="galeria.html">Mis Trabajos</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
 
     <main class="contacto">
         
@@ -65,6 +71,22 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('nav-mobile');
+        if (toggleButton && mobileMenu) {
+            toggleButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+        }
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    });
+</script>
 
 </body>
 

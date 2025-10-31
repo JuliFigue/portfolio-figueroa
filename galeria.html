@@ -26,7 +26,14 @@
                 <a href="galeria.html">Mis trabajos</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
+            <button class="menu-hamburguesa" id="menu-toggle">☰</button>
         </div>
+        
+        <nav class="nav-mobile" id="nav-mobile">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Mis Trabajos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
     <main class="galeria-main">
         <section class="galeria-intro">
@@ -34,7 +41,11 @@
             class="ratita-ilustracion ratita-top">
 
             <div class="burbuja-mensaje">
-                <h2>Hace click para ver algunos de mis trabajos :D</h2>
+             <h2>Tambien podes encontrarme acá:</h2>
+                <nav class="enlaces-nav"> 
+                    <a href="https://www.behance.net/julietafiguero" target="_blank">Behance</a>
+                    <a href="https://www.instagram.com/kwa.dg/?igsh=MWx2bWc1cGcyajBnaw%3D%3D#" target="_blank">Instagram</a>
+                </nav>
             </div>
         </section>
 
@@ -59,6 +70,24 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('nav-mobile');
+
+        if (toggleButton && mobileMenu) {
+            toggleButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+            });
+        }
+        
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    });
+</script>
 
 </body>
 
