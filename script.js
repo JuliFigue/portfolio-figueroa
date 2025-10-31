@@ -53,3 +53,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+document.getElementById('contactoForm').addEventListener('submit', function(event) {
+
+    event.preventDefault(); 
+    this.style.display = 'none'; 
+    document.getElementById('mensajeExito').style.display = 'block';
+    console.log("Simulación: Datos del formulario procesados.");
+});

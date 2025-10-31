@@ -41,12 +41,16 @@
         
         <section class="contenedor-contacto">
             
-            <form action="" method="post" class="formulario-estilizado">
+           <form id="contactoForm" action="" method="post" class="formulario-estilizado">
                 <input type="email" name="email" placeholder="tu email debería estar acá">
                 <input type="text" name="asunto" placeholder="insertar asunto">
                 <textarea name="mensaje" placeholder="texto texto texto"></textarea>
                 <input type="submit" value="Enviar">
             </form>
+
+            <div id="mensajeExito" style="display: none; color: green; padding: 10px; border: 1px solid green;">
+                ¡Mensaje enviado correctamente! Gracias por contactarme.
+            </div>
 
             <div class= "info-lateral">
                 <img src="img/ratita 4.svg" alt="Personaje animado" class="img-contacto">
