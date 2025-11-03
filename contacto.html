@@ -49,11 +49,11 @@
             </form>
 
             <div id="mensajeExito" class="mensaje-exito">
-                <h3>¡Mensaje Enviado! 👋</h3>
+                <h3>¡Mensaje enviado! 👋</h3>
                 <p>Gracias por tu interés. Te contactaré a la brevedad.</p>
             </div>
 
-            <script src="script.js"></script>
+           
 
             <div class= "info-lateral">
                 <img src="img/ratita 4.svg" alt="Personaje animado" class="img-contacto">
@@ -78,22 +78,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButton = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('nav-mobile');
-            if (toggleButton && mobileMenu) {
-                toggleButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('active');
-                });
-            }
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        });
-    </script>
 
 </body>
 
