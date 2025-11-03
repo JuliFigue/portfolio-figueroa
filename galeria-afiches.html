@@ -51,6 +51,11 @@
             <img src="galeria-afiches/etiqueta.png" alt="etiqueta hecha para la materia taller de diseño 3">
             <img src="galeria-afiches/postales.png" alt="Postales sobre la pelicula call me by your name">
         </section>
+       <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
     </main>
     
     <footer class="footer">
@@ -59,22 +64,6 @@
     </footer>
 
     <script src="script.js"></script>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButton = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('nav-mobile');
-            if (toggleButton && mobileMenu) {
-                toggleButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('active');
-                });
-            }
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        });
-    </script>
 
 </body>
 </html>

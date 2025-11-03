@@ -49,7 +49,10 @@
             <img src="galeria-fotos/unla.png" alt="Foto de la parte de atrás del edificio hernandez de unla">
             <img src="galeria-fotos/estacion.png" alt="foto de la fachada de la estación de trenes de Remedios de escalada sacada desde el puente peatonal">
         </section>
-
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
     </main>  
 
     <footer class="footer">
@@ -57,21 +60,5 @@
         <p>Julieta Noelí Figueroa | UNLa | 2025</p>
     </footer>
     <script src="script.js"></script>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const toggleButton = document.getElementById('menu-toggle');
-            const mobileMenu = document.getElementById('nav-mobile');
-            if (toggleButton && mobileMenu) {
-                toggleButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('active');
-                });
-            }
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.remove('active');
-                });
-            });
-        });
-    </script>
 </body>
 </html>

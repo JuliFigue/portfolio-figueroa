@@ -669,10 +669,62 @@ body {
 .afiches-grid img:hover {
     transform: scale(1.05);
 }
+.modal {
 
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.9); 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.modal.show {
+   display: flex;
+}
+
+.modal-content { 
+    width: 90%; 
+    max-width: 800px; 
+    max-height: 90vh; 
+    object-fit: contain; 
+    border-radius: 8px;
+    border: 6px solid var(--color-nav, #fff); 
+    box-shadow: 0 0 15px var(--color-verde, #0f0);
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
+
     .barra-superior {
         padding: 10px 20px;
     }
@@ -910,6 +962,7 @@ body {
         box-shadow: none;
         order: 2;
     }
+}    
 
 
 @media (max-width: 480px) {
