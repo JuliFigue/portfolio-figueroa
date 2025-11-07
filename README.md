@@ -1,0 +1,7 @@
+Para el desarrollo de este trabajo se adaptó a código una maqueta previamente diseñada en Figma, correspondiente a mi portfolio personal. La estructura general del sitio se organizó en tres archivos principales en formato HTML: index, galería y contacto. A su vez, la sección de galería se dividió en dos archivos adicionales para diferenciar los contenidos entre afiches y fotografías.
+Todos los documentos HTML se vincularon a una única hoja de estilos CSS, donde se volcó el diseño completo del portfolio, respetando las decisiones visuales y compositivas establecidas en la maqueta original.
+Además, se realizó una breve investigación en distintos sitios de programación para incorporar fragmentos de JavaScript, con el objetivo de añadir interactividad. Entre las funcionalidades implementadas se incluyen un botón de “Poné play” para reproducir música y la integración de funciones básicas al formulario de contacto, optimizando la experiencia del usuario dentro del sitio.
+Por último, todo el sitio fue adaptado a dispositivos móviles, garantizando su correcta visualización tanto en celulares como en tablets, mediante el uso de la etiqueta @media y ajustes específicos en el diseño.
+Figma: https://www.figma.com/design/92TLAfKnsa2JyW9vBf1vsp/Figueroa--Portfolio?node-id=0-1&p=f&t=pFOqz3To2aNUbbyv-0
+Editor de código: Visual Studio Code
+Tamaño de pantalla: 1920 x 1080
